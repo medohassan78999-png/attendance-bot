@@ -17,8 +17,7 @@ jobs:
       with:
         node-version: '20'
         
-    - name: Install dependencies
-    - run: npm install
-
-    - name: Run Bot
-      run: node index.js
+    - name: Install dependencies and Run Bot
+      run: |
+        npm install
+        node index.js
